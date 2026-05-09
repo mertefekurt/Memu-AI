@@ -103,7 +103,7 @@ struct ContentView: View {
                 }
                 .padding()
             }
-            .onChange(of: chatViewModel.messages.count, initial: true) { oldValue, newValue in
+            .onChange(of: chatViewModel.messages.count, initial: true) { _, _ in
                 withAnimation {
                     proxy.scrollTo(chatViewModel.messages.last?.id, anchor: .bottom)
                 }

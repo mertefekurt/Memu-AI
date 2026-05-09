@@ -28,17 +28,11 @@ class ChatViewModel: ObservableObject {
     @Published var userSettings = UserSettings()
     
     private let apiURL = ""
-    private let apikey = ""
     private var isProcessing = false
     private var currentTask: Task<Void, Never>?
     
     private let queue = DispatchQueue(label: "com.memu.chatQueue", qos: .userInitiated)
     private let saveQueue = DispatchQueue(label: "com.memu.saveQueue", qos: .background)
-    
-    private let urlSession = URLSession.shared
-    private let jsonDecoder = JSONDecoder()
-    private let retryLimit = 3
-    private var retryCount = 0
     
     init() {
         loadConversations()
@@ -110,6 +104,7 @@ class ChatViewModel: ObservableObject {
         }
     }
     
+    /// Converts assistant responses into UI-friendly message formats.
     func parseResponse(_ response: String) -> FormattedMessage {
         // Liste formatını kontrol et
         if response.contains("liste:") || response.contains("Liste:") {
@@ -174,6 +169,7 @@ class ChatViewModel: ObservableObject {
         return FormattedMessage(content: response, format: .normal)
     }
     
+    /// Builds the Turkish assistant prompt with recent conversation context.
     private func createPrompt(for text: String) -> String {
         let recentMessages = messages.suffix(10).map { message in
             let role = message.role == .user ? "Kullanıcı" : "Memu"
