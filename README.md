@@ -1,162 +1,61 @@
-<div align="center">
-  <img src="Documentation/Images/screenshots/chat.png" width="200" alt="Memu Banner"/>
-
-  <h1>Memu - AI Chat Assistant</h1>
-
-  <p>
-    Modern, akıllı ve kişiselleştirilebilir iOS sohbet asistanı
-  </p>
-
-  <p>
-    <img src="https://img.shields.io/badge/iOS-17.0+-blue.svg" alt="iOS"/>
-    <img src="https://img.shields.io/badge/Swift-5.9-orange.svg" alt="Swift"/>
-    <img src="https://img.shields.io/badge/SwiftUI-4.0-purple.svg" alt="SwiftUI"/>
-  </p>
-</div>
-
-## ✨ Özellikler
+# Memu AI
 
 <div align="center">
-  <img src="Documentation/Images/screenshots/chat.png" width="220" alt="Chat"/>
-  <p><em>Akıllı ve doğal sohbet deneyimi</em></p>
+
+![Memu AI banner](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=180&section=header&text=Memu%20AI&fontSize=54&fontAlignY=38&desc=SwiftUI%20chat%20assistant%20with%20conversation%20history%2C%20settings%2C%20and%20polished%20mobile%20screens&descAlignY=58&descSize=17)
+
+![Swift](https://img.shields.io/badge/Swift-5.9-F05138?style=for-the-badge&logo=swift&logoColor=white)
+![iOS](https://img.shields.io/badge/iOS-17%2B-000000?style=for-the-badge&logo=apple&logoColor=white)
+![SwiftUI](https://img.shields.io/badge/UI-SwiftUI-0A84FF?style=for-the-badge&logo=swift&logoColor=white)
+
 </div>
 
-### 🤖 Yapay Zeka
-- **Akıllı Yanıtlar**: Bağlama duyarlı ve tutarlı cevaplar.
-- **Özel Formatlar**: Liste görünümü.
-- **Doğal Etkileşim**: Yazıyor göstergesi ve akıcı animasyonlar.
+Memu AI is an iOS chat assistant built with SwiftUI. It focuses on a clean chat experience, conversation management, configurable settings, and native iOS interaction patterns.
 
-### 🎨 Arayüz ve Tasarım
+![Code snapshot](assets/code-snapshot.png)
 
-<div align="center">
-  <table>
-    <tr>
-      <td>
-        <img src="Documentation/Images/screenshots/conversations.png" width="220" alt="Conversations"/>
-        <p align="center"><strong>Sohbetler</strong></p>
-      </td>
-      <td>
-        <img src="Documentation/Images/screenshots/settings.png" width="220" alt="Settings"/>
-        <p align="center"><strong>Ayarlar</strong></p>
-      </td>
-    </tr>
-  </table>
-</div>
+## Screenshots
 
-- **Modern Tasarım**
-  - Şık mesaj balonları
-  - Karanlık tema desteği
-  - Akıcı animasyonlar
-- **Kişiselleştirme**
-  - 6 farklı tema rengi
-  - Özelleştirilebilir kullanıcı adı
-  - Kalıcı ayarlar
+| Chat | Conversations | Settings |
+| --- | --- | --- |
+| <img src="Documentation/Images/screenshots/chat.png" width="220" alt="Chat screen"> | <img src="Documentation/Images/screenshots/conversations.png" width="220" alt="Conversations screen"> | <img src="Documentation/Images/screenshots/settings.png" width="220" alt="Settings screen"> |
 
-### 💾 Veri Yönetimi
-- Otomatik sohbet kaydı
-- Sohbet geçmişi yönetimi
-- Güvenli veri saklama
+## Features
 
-## 🛠 Teknolojiler
+- SwiftUI-first chat interface
+- Conversation list and message history screens
+- Settings area for app configuration
+- Native iOS project structure with unit and UI tests
+- App icon and visual assets included
+- Lightweight project that is easy to open in Xcode
 
-- **SwiftUI**: Modern ve deklaratif UI
-- **Async/Await**: Güçlü asenkron programlama
-- **MVVM**: Temiz ve sürdürülebilir mimari
-- **UserDefaults**: Yerel veri saklama
+## Quick Start
 
-## 📱 Ekran Görüntüleri
-
-<div align="center">
-  <table>
-    <tr>
-      <td>
-        <img src="Documentation/Images/screenshots/conversations.png" width="220" alt="Sohbetler"/>
-        <p align="center">Sohbet Listesi</p>
-      </td>
-      <td>
-        <img src="Documentation/Images/screenshots/chat.png" width="220" alt="Sohbet"/>
-        <p align="center">Sohbet Ekranı</p>
-      </td>
-      <td>
-        <img src="Documentation/Images/screenshots/settings.png" width="220" alt="Ayarlar"/>
-        <p align="center">Ayarlar</p>
-      </td>
-    </tr>
-  </table>
-</div>
-
-## ⚙️ Kurulum
-
-1. Repoyu klonlayın
 ```bash
-git clone https://github.com/edex/memu.git
-```
-
-2. API anahtarınızı ekleyin
-```swift
-// MemuApp.swift
-private let apiURL = "YOUR_API_URL"
-private let apiKey = "YOUR_API_KEY"
-```
-
-3. Xcode ile açın ve çalıştırın
-```bash
-cd memu
+git clone https://github.com/mertefekurt/Memu-AI.git
+cd Memu-AI
 open Memu.xcodeproj
 ```
 
-## 🔧 Gereksinimler
+Then select an iOS simulator or device in Xcode and run the `Memu` scheme.
 
-- iOS 17.0+
-- Xcode 15.0+
-- Swift 5.9+
+## Project Structure
 
-## 📦 Proje Yapısı
-
-```
+```text
 Memu/
-├── App/
-│   ├── MemuApp.swift
-│   └── ContentView.swift
-├── Features/
-│   ├── Chat/
-│   ├── Conversations/
-│   └── Settings/
-├── Models/
-└── Utilities/
+  MemuApp.swift              App entry point
+  ContentView.swift          Main SwiftUI interface
+  Assets.xcassets/           App icon, accent color, and assets
+Documentation/Images/        App screenshots
+MemuTests/                   Unit tests
+MemuUITests/                 UI tests
+Memu.xcodeproj/              Xcode project
 ```
 
-## 🤝 Katkıda Bulunma
+## Requirements
 
-1. Fork yapın
-2. Yeni bir branch oluşturun (`git checkout -b feature/amazing`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Harika özellik eklendi'`)
-4. Branch'inizi push edin (`git push origin feature/amazing`)
-5. Pull Request açın
-
-## MIT License
-
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-<div align="center">
-  <p>
-    <sub>Made with ❤️ by edex</sub>
-  </p>
-</div>
+| Tool | Version |
+| --- | --- |
+| Xcode | 15 or newer recommended |
+| iOS | 17.0 or newer |
+| Swift | 5.9 or newer |
