@@ -203,6 +203,7 @@ class ChatViewModel: ObservableObject {
         """
     }
     
+    /// Sends a user prompt, appends the assistant response, and persists the conversation.
     func sendMessage(_ text: String) {
         guard !isProcessing else { return }
         isProcessing = true
@@ -274,6 +275,7 @@ class ChatViewModel: ObservableObject {
         }
     }
     
+    /// Cancels any in-flight response generation and resets transient typing state.
     func cancelCurrentRequest() {
         currentTask?.cancel()
         currentTask = nil
@@ -284,6 +286,7 @@ class ChatViewModel: ObservableObject {
         }
     }
     
+    /// Removes a conversation and selects a sensible fallback conversation when needed.
     func deleteConversation(_ id: UUID) {
         queue.async { [weak self] in
             guard let self = self else { return }
