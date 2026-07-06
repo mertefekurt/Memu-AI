@@ -1,6 +1,6 @@
 <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Memu AI icon">
-  <rect width="240" height="240" rx="48" fill="#102018"/>
-  <path d="M58 74h124v92H58z" fill="none" stroke="#15803d" stroke-width="14" stroke-linejoin="round"/>
-  <path d="M82 110h72M82 140h44" stroke="#f7fee7" stroke-width="12" stroke-linecap="round"/>
-  <path d="M58 182h124" stroke="#84cc16" stroke-width="12" stroke-linecap="round"/>
+  <rect width="240" height="240" rx="52" fill="#161616"/>
+  <path d="M54 172V72h132v100" stroke="#a3e635" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M82 110h76M82 140h42" stroke="#fafafa" stroke-width="12" stroke-linecap="round"/>
+  <path d="M56 186h128" stroke="#38bdf8" stroke-width="12" stroke-linecap="round"/>
 </svg>

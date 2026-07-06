@@ -1,21 +1,33 @@
 # Memu AI
 
-SwiftUI chat app with conversation history, settings, tests, and native iOS project structure.
-
 ![Memu AI cover](assets/readme-cover.svg)
 
-## Screens
+SwiftUI chat app with native iOS screens.
 
-| Chat | Conversations | Settings |
-| --- | --- | --- |
-| <img src="Documentation/Images/screenshots/chat.png" width="220" alt="Chat screen"> | <img src="Documentation/Images/screenshots/conversations.png" width="220" alt="Conversations screen"> | <img src="Documentation/Images/screenshots/settings.png" width="220" alt="Settings screen"> |
+## Project route
 
-## Open in Xcode
+![Workflow diagram](assets/readme-diagram.svg)
+
+## Local start
 
 ```bash
 git clone https://github.com/mertefekurt/Memu-AI.git
 cd Memu-AI
-open Memu.xcodeproj
+Memu-AI
 ```
 
-Run the `Memu` scheme on an iOS simulator.
+## What matters
+
+- Designed as a focused desktop lab repo.
+- Keeps setup short.
+- Prioritizes readable output over infrastructure.
+
+## File path
+
+```text
+Documentation/   screenshots and notes
+Memu/            project file
+Memu.xcodeproj/  project file
+MemuTests/       project file
+MemuUITests/     project file
+```
