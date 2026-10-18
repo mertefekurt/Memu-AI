@@ -2,28 +2,20 @@
 
 ![Memu AI cover](assets/readme-cover.svg)
 
-memu, yapay zeka destekli bir sohbet uygulaması.
-
-`Swift`
-
-## Start here
-
-```bash
-git clone https://github.com/mertefekurt/Memu-AI.git
-cd Memu-AI
-Memu-AI
-```
+A SwiftUI chat application with native Apple-platform screens. The repository keeps the interface, tests, and project notes together in a compact Xcode project.
 
 ## Project map
 
 ```text
 Documentation/   screenshots and notes
-Memu/            project file
-Memu.xcodeproj/  project file
-MemuTests/       project file
-MemuUITests/     project file
+Memu/            application source
+Memu.xcodeproj/  Xcode project
+MemuTests/       unit tests
+MemuUITests/     UI tests
 ```
 
-## Repository
+## Open locally
 
-[Open the source on GitHub →](https://github.com/mertefekurt/Memu-AI)
+Open `Memu.xcodeproj` in Xcode, choose the `Memu` scheme, and run on a simulator or connected device.
+
+[Open the source →](https://github.com/mertefekurt/Memu-AI)
