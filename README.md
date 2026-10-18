@@ -2,13 +2,11 @@
 
 ![Memu AI cover](assets/readme-cover.svg)
 
-SwiftUI chat app with native iOS screens.
+memu, yapay zeka destekli bir sohbet uygulaması.
 
-## Project route
+`Swift`
 
-![Workflow diagram](assets/readme-diagram.svg)
-
-## Local start
+## Start here
 
 ```bash
 git clone https://github.com/mertefekurt/Memu-AI.git
@@ -16,13 +14,7 @@ cd Memu-AI
 Memu-AI
 ```
 
-## What matters
-
-- Designed as a focused desktop lab repo.
-- Keeps setup short.
-- Prioritizes readable output over infrastructure.
-
-## File path
+## Project map
 
 ```text
 Documentation/   screenshots and notes
@@ -31,3 +23,7 @@ Memu.xcodeproj/  project file
 MemuTests/       project file
 MemuUITests/     project file
 ```
+
+## Repository
+
+[Open the source on GitHub →](https://github.com/mertefekurt/Memu-AI)
